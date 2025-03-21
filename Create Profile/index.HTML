@@ -1,0 +1,38 @@
+<!DOCTYPE html><!--add styling later on/js-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="container">
+        <h1>GET YOUR TICKETS HERE!</h1>
+        <!--BootStrap Form-->
+        <div id="sign-up-form" class="sign-up">
+            <form>
+                <div class="mb-3"><!--in css stack vertically or change from label-->
+                  <label for="exampleInputEmail1" class="form-label" >Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <label for="exampleInputEmail2" class="form-label" >Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                  <label for="exampleInputPassword1" class="form-label" aria-placeholder="Please re-enter...">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Stay signed in</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <div id="legality" class="form-text">We'll never share your email with anyone else.</div>
+              </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
