@@ -4,11 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylsheet" href="styles.css">
-    <title>Document</title>
+    <title>Sign-In</title>
 </head>
 <body>
     <div class="container" id="body-container">
-
+      <div class="modal-dialog modal-dialog-centered">
+        <!--link button to front -pge-->
+        <!--BootStrap Form-->
+        <div id="sign-up-form" class="sign-up">
+            <form>
+                <div class="mb-3"><!--in css stack vertically or change from label-->
+                  <label for="exampleInputEmail1" class="form-label" >Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <label for="exampleInputEmail2" class="form-label" >Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Please re-enter E-mail">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                  <label for="exampleInputPassword1" class="form-label" aria-describedby="Please re-enter..." placeholder="Please re-enter password"></label>Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Stay signed in</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <div id="legality" class="form-text">We'll never share your email with anyone else.</div>
+              </form>
+        </div>
+      </div>
     </div>
     <scripts src="scripts.js" rel="scripts"></scripts>
 </body>
