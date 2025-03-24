@@ -10,14 +10,31 @@ window.onload = function () {
 
 
 function addList(){
-    function listGroup() {
-    if(inputBox.value === '') {
-        alert("Please search the catalogue")
+ if(inputBox.value === '') {
+    alert("Please search the catalogue")
+   }
+  else{
+      let li = document.createElement('li');
+      li.innerHTML = inputBox.value;
+      listContainer.appendChild(li);
+      let span = document.createElement("span")
+      span.innerHTML = "X"
+      li.appendChild(span);
     }
-    else{
-        let li = document.createElement('li');
-        li.innerHTML = inputBox.value;
-        listContainer.appendChild(li);
-    }
- }
+    inputBox.value = "";
 };
+
+listContainer.addEventsListener("click", function(e) {
+    if(e.target.tagName === "LI"){
+        e.target.classList.toggle("checked");
+    } else if(e.target.tagName === "SPAN"){
+        e.target.parentElement.remove();
+    }
+}, false);
+
+//css boxes for unordered lists
+function createList() {
+    let li = document.createElement('li');
+    li.innerHTML = inputBox.value;
+    listContainer.appendChild(li);
+}
